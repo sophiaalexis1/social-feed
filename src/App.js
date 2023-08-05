@@ -12,8 +12,9 @@ function App() {
         </div>
       </header>
       <div>
-        <Post username="Harry Potter" body="This is my first post! What do you think?" />
-        <Post username="Hermione Granger" body="Had a great day at the park today!" />
+        <Post username="Harry Potter" body="I solemnly swear I am up to no good." />
+        <Post username="Hermione Granger" body="I mean, it's sort of exciting, isn't it, breaking the rules?" />
+        <Post username="Severus Snape" body="Always" />
       </div>
     </div>
   );
