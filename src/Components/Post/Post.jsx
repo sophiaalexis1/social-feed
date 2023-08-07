@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Post.css'
 
-const Post = ({ username, body }) => {
+const Post = ({ username, body, date }) => {
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
   const [likeactive, setLikeActive] = useState(false);
@@ -53,6 +53,7 @@ const Post = ({ username, body }) => {
     <div className="post">
       <h3>{username}</h3>
       <p>{body}</p>
+      <p>{date}</p>
       <div>
         <button
           className={[likeactive ? 'active-like' : null, 'button'].join(' ')}
