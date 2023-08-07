@@ -10,22 +10,31 @@ form {
   justify-content: center;
   }
   
-  container {
-    display: flex;
-    flex-direction: row;
-  }
-  label {
-    margin-bottom: 4px;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.label {
+  margin-right: 10px;
+  margin: 0;
+  margin-bottom: 0;
+}
   
-  input,
- textarea {
-    padding: 10px;
-    margin-bottom: 12px;
-    border: 1px solid #007bff;
-    border-radius: 8px;
-    width: 100%;
-  }
+textarea {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #082664;
+  border-radius: 8px;
+  width: 100%;
+}
+input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #082664;
+  border-radius: 8px;
+  width: 100%;
+}
 
   button {
     padding: 8px 16px;

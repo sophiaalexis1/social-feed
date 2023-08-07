@@ -11,7 +11,7 @@ const NavigationBar = () => {
   return (
     <div className='nav'>
       <nav>
-        <h3>Social Feed</h3>
+        <h1>Social <span className='feed'>Feed</span></h1>
       </nav>
       {}
       {activeTab === 'Home' && <div>Home Content</div>}

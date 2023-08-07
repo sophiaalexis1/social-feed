@@ -13,6 +13,20 @@
   }
 }
 
+.border {
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+  margin:0 auto;
+  border-end-end-radius: 15%;
+  border-end-start-radius: 15%;
+  border-start-end-radius: 15%;
+  border-start-start-radius: 15%;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,19 +49,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.post {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  color: white;
-}
-
-h3 {
-  margin: 0;
-}
-
-p {
-  margin: 10px 0;
 }

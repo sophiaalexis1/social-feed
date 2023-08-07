@@ -2,13 +2,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #6c459b;
+    background-color: #082664;
     height: 70px;
     width: 100%;
     line-height: 70px;
     border: 1px  solid rgb(4, 4, 4);
     color: white;
     padding: 1em;
+    font-family: Segoe UI; 
+    font-size: larger;
     /* float: right; */
     /* margin-left: 1em; */
   }
@@ -30,3 +32,6 @@ nav {
     background-color: #555;
   }
   
+.feed {
+  color: brown; 
+}

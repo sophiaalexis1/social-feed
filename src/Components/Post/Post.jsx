@@ -8,15 +8,15 @@ const Post = ({ username, body, date }) => {
   const [dislikeactive, setDislikeActive] = useState(false);
 //   const [buttonClass, setButtonClass ] = useState("inactive");
 
-//   const handleLike = () => {
-//     setLikes(likes + 1);
-//     handleClick();
-//   };
+  // const handleLike = () => {
+  //   setLikes(likes + 1);
+  //   handleClick();
+  // };
 
-//   const handleDislike = () => {
-//     setDislikes(dislikes + 1);
-//     handleClick();
-//   };
+  // const handleDislike = () => {
+  //   setDislikes(dislikes + 1);
+  //   handleClick();
+  // };
 
   function likef(){
     if(likeactive) {
@@ -28,7 +28,7 @@ const Post = ({ username, body, date }) => {
         setLikes(likes + 1);
         if(dislikeactive) {
             setDislikeActive(false);
-            // setlike(like + 1);
+            // setLikes(likes + 1);
             setDislikes(dislikes -1)
         }
     }
@@ -50,10 +50,10 @@ const Post = ({ username, body, date }) => {
   }
 
   return (
-    <div className="post">
+    <div className='post1'>
       <h3>{username}</h3>
       <p>{body}</p>
-      <p>{date}</p>
+      <p className='date'>{date.toLocaleString()}</p>
       <div>
         <button
           className={[likeactive ? 'active-like' : null, 'button'].join(' ')}
@@ -69,6 +69,7 @@ const Post = ({ username, body, date }) => {
         >
           Dislike ({dislikes})
         </button>
+        <div className='white-line'></div>
       </div>
     </div>
   );
